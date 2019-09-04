@@ -14,6 +14,7 @@ class Event implements Serializable {
         this.title = title;
         this.description = description;
     }
+    
     public String toString() {
         String[] show = {this.title, this.startTime, this.endTime, this.description};
         return String.join("\n",show );
