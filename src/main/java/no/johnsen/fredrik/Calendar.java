@@ -19,11 +19,11 @@ class Calendar {
     public void deleteEvent (Event event) {
         this.storage.delete(event);
     }
-    
+
     public String toString() {
         String temp = "";
         for( Event event : this.getEvents() ) {
-            temp += event.toString();
+            temp += event.toString() + "\n";
         }
         return temp;
     }
